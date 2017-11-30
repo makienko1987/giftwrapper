@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Test_Giftwrapper>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Catalog/>
+            </depends>
+        </Test_Giftwrapper>
+    </modules>
+</config>

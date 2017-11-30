@@ -1,0 +1,16 @@
+{
+  "name":"makienko1987/giftwrapper",
+  "type":"magento-module",
+  "license":"OSL-3.0",
+  "homepage": "https://github.com/makienko1987/giftwrapper",
+  "description":"Magento extension to add gift wrapper product and control the behavior of shopping cart",
+  "authors":[
+    {
+      "name":"Andrey Makienko",
+      "email":"makyshplat@gmail.com"
+    }
+  ],
+  "require":{
+    "magento-hackathon/magento-composer-installer":"*"
+  }
+}

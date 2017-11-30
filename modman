@@ -1,0 +1,23 @@
+# 1-- Extension code dir
+# Magento Community Module     - Recursive Dir - Test/Test_Giftwrapper
+app/code/community/Test/Test_Giftwrapper app/code/community/Test/Test_Giftwrapper
+
+# 2--- Module enable XML
+# Magento Global Config        - File          - modules/Test_Giftwrapper.xml
+app/etc/modules/Test_Giftwrapper.xml                                app/etc/modules/Test_Giftwrapper.xml
+
+# 3-- English translation
+# Magento Locale language      - File          - en_US/Test_Giftwrapper.csv
+app/locale/en_US/Test_Giftwrapper.csv                               app/locale/en_US/Test_Giftwrapper.csv
+
+# 4--- Frontend layout
+# Magento User Interface       - File          - frontend/base/default/layout/test_giftwrapper/gift_wrapper.xml
+app/design/frontend/base/default/layout/test_giftwrapper/gift_wrapper.xml        app/design/frontend/base/default/layout/test_giftwrapper/gift_wrapper.xml
+
+# 5--- Frontend template  Dir
+# Magento User Interface       - Recursive Dir          - app/design/frontend/base/default/template/checkout/cart/test_giftwrapper
+app/design/frontend/base/default/template/checkout/cart/test_giftwrapper        app/design/frontend/base/default/template/checkout/cart/test_giftwrapper
+
+# 6--- Frontend Js Dir
+# Magento Theme Skin Js       - Recursive Dir          - skin/frontend/base/default/js/test_giftwrapper
+skin/frontend/base/default/js/test_giftwrapper            skin/frontend/base/default/js/test_giftwrapper

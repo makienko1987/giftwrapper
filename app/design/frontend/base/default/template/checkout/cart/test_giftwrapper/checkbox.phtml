@@ -1,0 +1,18 @@
+<?php
+/**
+* @author      Andrey Makienko <makyshplat@gmail.com>
+*/
+?>
+<?php $parentItem = $this->getParentItem() ?>
+<?php $giftItemId = Mage::helper('test_giftwrapper')->getCurrentItemFromParent($parentItem);?>
+<?php if (($productWrapperId = $this->getGiftWrapperProductId()) && $this->isModuleEnabled()) : ?>
+    <input
+            type="checkbox"
+            <?php echo ($giftItemId) ? 'checked' : ''; ?>
+            data-product-id="<?php echo $productWrapperId; ?>"
+            data-item-id="<?php echo $giftItemId; ?>"
+            class="gift_wrapper_checkbox"
+            id="<?php echo $parentItem->getId(); ?>"
+            name="gift_wrapper_checkbox"
+    />
+<?php endif; ?>

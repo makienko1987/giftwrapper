@@ -1,0 +1,13 @@
+<?php
+/**
+ * @author      Andrey Makienko <makyshplat@gmail.com>
+ */
+?>
+<?php if ($this->isModuleEnabled()) : ?>
+    <script>
+        jQuery(document).ready(function () {
+            Gift_Wrapper.init();
+            Gift_Wrapper.ajax_url = '<?php echo $this->getAjaxUrl()?>';
+        });
+    </script>
+<?php endif; ?>

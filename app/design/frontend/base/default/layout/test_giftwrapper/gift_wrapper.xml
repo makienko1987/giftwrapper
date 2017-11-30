@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      Andrey Makienko <makyshplat@gmail.com>
+ */
+-->
+<layout version="0.1.0">
+
+    <checkout_cart_index translate="label">
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/test_giftwrapper/Gift_Wrapper.js</name>
+            </action>
+        </reference>
+        <reference name="checkout.cart">
+            <action method="setTemplate">
+                <value>checkout/cart/test_giftwrapper/cart.phtml</value>
+            </action>
+            <action method="setEmptyTemplate">
+                <value>checkout/cart/noItems.phtml</value>
+            </action>
+            <action method="addItemRender">
+                <type>simple</type>
+                <block>checkout/cart_item_renderer</block>
+                <template>checkout/cart/test_giftwrapper/default.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>grouped</type>
+                <block>checkout/cart_item_renderer_grouped</block>
+                <template>checkout/cart/test_giftwrapper/default.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>configurable</type>
+                <block>checkout/cart_item_renderer_configurable</block>
+                <template>checkout/cart/test_giftwrapper/default.phtml</template>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="test_giftwrapper/checkout_handler" name="checkout.cart.gift.handler"
+                   as="checkout_cart_gift_handler" template='checkout/cart/test_giftwrapper/handler.phtml'
+                   after="checkout.cart"/>
+        </reference>
+    </checkout_cart_index>
+
+</layout>
