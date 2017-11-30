@@ -1,8 +1,8 @@
 # Introduction
 This module involves creating a simple gift wrapping module for cart items.
 # Features
- - Ability to add quote item (product in cart) SKU to gift wrapper product as a custom option.
- - Gift Wrapper product will remove after deleting parent product in cart.
+ - Ability to add a quote item (product in cart) SKU to gift wrapper product as a custom option.
+ - Gift Wrapper product will be deleted after the parent product has been removed from the shopping cart.
  
 # How to Install 
 
