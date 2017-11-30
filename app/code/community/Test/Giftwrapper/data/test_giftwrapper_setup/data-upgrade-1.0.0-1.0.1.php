@@ -31,7 +31,7 @@ try {
             ->setTypeId(Mage_Catalog_Model_Product_Type::TYPE_SIMPLE)//product type
             ->setCreatedAt(strtotime('now'))
             ->setSku(Test_Giftwrapper_Helper_Data::TEST_GIFT_WRAPPER_PRODUCT_SKU)//SKU
-            ->setName(Test_Giftwrapper_Helper_Data::TEST_GIFT_WRAPPER_PRODUCT_SKU)//product name
+            ->setName(Test_Giftwrapper_Helper_Data::TEST_GIFT_WRAPPER_PRODUCT_NAME)//product name
             ->setWeight(1.0000)
             ->setCanWrapped(0)
             ->setIsGiftwrapperProduct(1)
@@ -39,8 +39,8 @@ try {
             ->setTaxClassId(0)
             ->setVisibility(Mage_Catalog_Model_Product_Visibility::VISIBILITY_NOT_VISIBLE)
             ->setPrice(Test_Giftwrapper_Helper_Data::TEST_GIFT_WRAPPER_PRODUCT_PRICE)
-            ->setDescription(Test_Giftwrapper_Helper_Data::TEST_GIFT_WRAPPER_PRODUCT_SKU)
-            ->setShortDescription(Test_Giftwrapper_Helper_Data::TEST_GIFT_WRAPPER_PRODUCT_SKU)
+            ->setDescription(Test_Giftwrapper_Helper_Data::TEST_GIFT_WRAPPER_PRODUCT_DESCRIPTION)
+            ->setShortDescription(Test_Giftwrapper_Helper_Data::TEST_GIFT_WRAPPER_PRODUCT_DESCRIPTION)
             ->setStockData(array(
                     'use_config_manage_stock' => 0,
                     'manage_stock'            => 0,

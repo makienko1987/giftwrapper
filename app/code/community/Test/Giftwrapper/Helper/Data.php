@@ -9,6 +9,8 @@ class Test_Giftwrapper_Helper_Data extends Mage_Core_Helper_Abstract
 {
     CONST TEST_GIFT_WRAPPER_PRODUCT_PRICE = '5'; // this is a fake test price
     CONST TEST_GIFT_WRAPPER_PRODUCT_SKU = 'gift_wrapper_sku';
+    CONST TEST_GIFT_WRAPPER_PRODUCT_NAME = 'Gift Wrapper';
+    CONST TEST_GIFT_WRAPPER_PRODUCT_DESCRIPTION = 'Gift Wrapper Description';
     CONST TEST_GIFT_WRAPPER_PRODUCT_GROUP = 'Gift Wrapper Settings';
     CONST TEST_GIFT_WRAPPER_MODULE_STATUS = 'test_giftwrapper/test_group/is_active';
 
