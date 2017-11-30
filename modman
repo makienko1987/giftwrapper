@@ -1,6 +1,6 @@
 # 1-- Extension code dir
-# Magento Community Module     - Recursive Dir - Test/Test_Giftwrapper
-app/code/community/Test/Test_Giftwrapper app/code/community/Test/Test_Giftwrapper
+# Magento Community Module     - Recursive Dir - Test/Giftwrapper
+app/code/community/Test/Giftwrapper app/code/community/Test/Giftwrapper
 
 # 2--- Module enable XML
 # Magento Global Config        - File          - modules/Test_Giftwrapper.xml
