@@ -27,7 +27,7 @@ This module involves creating a simple gift wrapping module for cart items.
    ```
    
 # Additional Info
-### Check Cart Page
+### Checkout Cart Page
 ![Alt text](https://raw.githubusercontent.com/makienko1987/giftwrapper/master/docs/CheckoutCart.png "Checkout Cart")
 ### Order Review Step
 ![Alt text](https://raw.githubusercontent.com/makienko1987/giftwrapper/master/docs/OrderReview.png "Order Review")
