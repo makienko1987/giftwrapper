@@ -9,16 +9,16 @@ $isVisibleProduct = $_item->getProduct()->isVisibleInSiteVisibility();
 $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage_Catalog_Model_Product_Attribute_Source_Msrp_Type::TYPE_BEFORE_ORDER_CONFIRM);
 ?>
 <tr>
+	<?php /** start rewrite */?>
     <td class="product-cart-gift-checkbox">
         <?php echo $this->getLayout()
             ->createBlock('test_giftwrapper/checkout_item')
             ->setParentItem($_item)
             ->toHtml()?>
     </td>
-    <td class="product-cart-image">
-        <?php /** start rewrite */?>
-
-        <?php /** end rewrite */?>
+	<?php /** end rewrite */?>
+    <td class="product-cart-image">  
+        
         <?php if ($this->hasProductUrl()):?>
             <a href="<?php echo $this->getProductUrl() ?>" title="<?php echo $this->escapeHtml($this->getProductName()) ?>" class="product-image">
         <?php endif;?>
