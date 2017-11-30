@@ -25,6 +25,9 @@
         <?php endif; ?>
     </div>
     <?php echo $this->getMessagesBlock()->toHtml() ?>
+    <span class="please-wait" id="gift-wrapper-wait" style="display:none;">
+                        <img src="<?php echo $this->getSkinUrl('images/opc-ajax-loader.gif') ?>" alt="<?php echo $this->quoteEscape($this->__('Please wait...')) ?>" class="v-middle" />
+                    </span>
     <?php echo $this->getChildHtml('form_before') ?>
     <form action="<?php echo $this->getFormActionUrl() ?>" method="post">
         <?php echo $this->getBlockHtml('formkey'); ?>

@@ -22,8 +22,9 @@ var Gift_Wrapper = (function ($) {
                     item_id:self.dataset.itemId,
                     action_item:(self.checked) ? 'add' : 'remove'
                 };
-
+                $j("#gift-wrapper-wait").show();
                 Gift_Wrapper.addItemToCart(params);
+
             });
 
         },
@@ -47,6 +48,7 @@ var Gift_Wrapper = (function ($) {
                         element.remove();
                     });
                 }, 3000);
+                $j("#gift-wrapper-wait").hide();
 
             }).error(function (result) {
                 var errorMessage = result.responseJSON.message;
@@ -57,6 +59,7 @@ var Gift_Wrapper = (function ($) {
                         element.remove();
                     });
                 }, 3000);
+                $j("#gift-wrapper-wait").hide();
 
             });
         }
